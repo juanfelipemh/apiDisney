@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "A2121584a.",
+    "database": "apiDisney",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "docker": {
+    "username": "root",
+    "password": "A2121584a.",
+    "database": "apiDisney",
+    "host": "mysqldb",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "mysqlDb",
+    "password": "A2121584.",
+    "database": "database_development",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
