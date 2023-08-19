@@ -33,7 +33,7 @@ Also, you have a controller when you can create the relation between these entit
 
 ## Installation with NodeJs
 
-1. Clone this repository: `git clone https://github.com/your-user/your-repo.git`
+1. Clone this repository: `git clone https://github.com/juanfelipemh/apiDisney`
 2. Navigate to the project directory: `cd project-name`
 3. Install dependencies: `npm install`
 4. You can create the database using the queryParaDocker.sql (Find in the project) or using sequelize-cli and migrate the database.
