@@ -3,9 +3,9 @@ const { Movie, Character, Gender } = require("../models");
 let movie = {};
 
 movie.ObtainAllMovies = async (req, res) => { 
-    const { name, order, gender } = req.query;
+    const { title, order, gender } = req.query;
 
-    if(name){
+    if(title){
         return findOneMovieByName(req, res);
     }
 
