@@ -72,8 +72,8 @@ INSERT INTO Characters (image, name, age, weight, history, createdAt, updatedAt)
 
 INSERT INTO Movies (image, title, publicationDate, rate, createdAt, updatedAt) VALUES
 ('movie1.jpg', 'The Enchanted Forest', '2022-05-15', 4, '2023-08-18 10:23:45', '2023-08-18 10:23:45'),
-('movie2.jpg', 'Knight's Honor', '2021-11-28', 3, '2023-08-18 11:45:30', '2023-08-18 11:45:30'),
-('movie3.jpg', 'Sorcerer\'s Secrets', '2023-03-02', 5, '2023-08-18 14:17:20', '2023-08-18 14:17:20'),
+('movie2.jpg', 'Knights Honor', '2021-11-28', 3, '2023-08-18 11:45:30', '2023-08-18 11:45:30'),
+('movie3.jpg', 'Sorcerers Secrets', '2023-03-02', 5, '2023-08-18 14:17:20', '2023-08-18 14:17:20'),
 ('movie4.jpg', 'Eternal Magic', '2023-07-10', 4, '2023-08-18 16:55:10', '2023-08-18 16:55:10');
 
 INSERT INTO Genders (name, image, createdAt, updatedAt) VALUES
@@ -83,43 +83,33 @@ INSERT INTO Genders (name, image, createdAt, updatedAt) VALUES
 ('Sci-Fi', 'scifi.jpg', '2023-08-18 16:55:10', '2023-08-18 16:55:10');
 
 
--- Relación 1
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (1, 1, 1, '2023-08-18 10:23:45', '2023-08-18 10:23:45');
 
--- Relación 2
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (2, 3, 2, '2023-08-18 11:45:30', '2023-08-18 11:45:30');
 
--- Relación 3
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (3, 2, 3, '2023-08-18 14:17:20', '2023-08-18 14:17:20');
 
--- Relación 4
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (4, 4, 4, '2023-08-18 16:55:10', '2023-08-18 16:55:10');
 
--- Relación 5
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (1, 2, 1, '2023-08-18 18:30:15', '2023-08-18 18:30:15');
 
--- Relación 6
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (3, 4, 2, '2023-08-18 19:55:40', '2023-08-18 19:55:40');
 
--- Relación 7
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (2, 1, 3, '2023-08-18 21:10:20', '2023-08-18 21:10:20');
 
--- Relación 8
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (4, 3, 4, '2023-08-18 22:40:10', '2023-08-18 22:40:10');
 
--- Relación 9
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (1, 4, 2, '2023-08-18 23:25:30', '2023-08-18 23:25:30');
 
--- Relación 10
 INSERT INTO Character_movie_gender (idCharacter, idMovie, idGender, createdAt, updatedAt) VALUES
 (3, 1, 4, '2023-08-19 00:15:15', '2023-08-19 00:15:15');
 

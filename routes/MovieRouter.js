@@ -87,10 +87,10 @@ router.post('/movies', [
  *       - bearerAuth: []
  *     parameters:
  *       - in: query
- *         name: name
+ *         name: title
  *         schema:
  *           type: string
- *         description: Filter by movie name
+ *         description: Filter by movie title
  *       - in: query
  *         name: gender
  *         schema:

@@ -3,9 +3,9 @@ const { Movie, Character, Gender } = require("../models");
 let movie = {};
 
 movie.ObtainAllMovies = async (req, res) => { 
-    const { name, order, gender } = req.query;
+    const { title, order, gender } = req.query;
 
-    if(name){
+    if(title){
         return findOneMovieByName(req, res);
     }
 
@@ -35,16 +35,16 @@ const listOfMovies = async (req, res) => {
 }
 
 const findOneMovieByName = async (req, res) => {
-    const name = req.query.name;
+    const title = req.query.title;
 
     try {      
-        if(!name){
-            return res.status(400).json({msg: 'The parameter "name" is wrong'})
+        if(!title){
+            return res.status(400).json({msg: 'The parameter "title" is wrong'})
         }
 
         const movie = await Movie.findAll({
             where: {
-                name: req.query.name
+                title: req.query.title
             }
         });
 
