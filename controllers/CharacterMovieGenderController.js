@@ -19,7 +19,7 @@ CharacterMovieGender.createRelationOnTable = async (req, res) => {
         });
 
         if(!created){
-            return res.status(400).json({msg: "Record already exists"});
+            return res.status(400).json({msg: "Record already exists..."});
         }
 
         res.status(201).json(newRecord)
